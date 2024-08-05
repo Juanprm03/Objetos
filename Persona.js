@@ -48,6 +48,8 @@ class Persona {
   }
 }
 
+module.exports = Persona
+
 const persona = new Persona('Juan', 19, '2005-03-05');
 console.log(persona.obtenerNombre());
 persona.establecerEdad(26);
