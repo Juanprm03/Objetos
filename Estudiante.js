@@ -10,7 +10,7 @@ class Estudiante extends Persona{
     }
     
     realizarTarea(){
-        console.log(`${this.nombre} ${this.apellido} Realizando tarea escolar`);
+        console.log(`${this.nombre} Realizando tarea escolar`);
     }
 
     toString(){

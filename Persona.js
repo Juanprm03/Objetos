@@ -7,6 +7,13 @@ class Persona {
     this.#nombre = nombre;
     this.#edad = edad;
     this.#fechaNacimiento = fechaNacimiento;
+    if(this.realizarTarea === undefined){
+        throw new Error ("La Persona debe implementar el metodo realizar tarea")
+    }
+  }
+  
+  realizarTarea() {
+    console.log(`${this.#nombre} Realizando tarea laboral`);
   }
 
   establecerNombre(nombre) {
