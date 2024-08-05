@@ -31,6 +31,12 @@ class Circulo extends FiguraGeometrica{
     super(nombre, color);
     this.#radio = radio;
   }
+  calcularArea() {
+    return Math.PI * this.#radio ** 2;
+  }
+  calcularPerimetro() {
+    return 2 * Math.PI * this.#radio;
+  }
 }
 
 class Rectangulo extends FiguraGeometrica {
@@ -41,5 +47,13 @@ class Rectangulo extends FiguraGeometrica {
       super(nombre, color);
       this.#base = base;
       this.#altura = altura;
+    }
+
+    calcularArea() {
+      return this.#base * this.#altura;
+    }
+
+    calcularPerimetro() {
+      return 2 * (this.#base + this.#altura);
     }
 }
