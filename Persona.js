@@ -41,4 +41,9 @@ class Persona {
   obtenerFechaNacimiento() {
     return this.#fechaNacimiento;
   }
+
+  calcularFechaNacimiento() {
+    const currentYear = new Date().getFullYear();
+    return new Date(currentYear - this.#edad, 0, 1);
+  }
 }
