@@ -10,6 +10,9 @@ class Persona {
   }
 
   establecerNombre(nombre) {
+    if (typeof nombre!=='string' || nombre.trim() === '') {
+        throw new Error("El nombre no puede estar vacío o contener solo espacios");
+      }
     this.#nombre = nombre;
   }
 
@@ -18,6 +21,9 @@ class Persona {
   }
 
   establecerEdad(edad) {
+    if (edad < 0) {
+        throw new Error("La edad no puede ser negativa");
+      }
     this.#edad = edad;
   }
 
@@ -26,6 +32,9 @@ class Persona {
   }
 
   establecerFechaNacimiento(fechaNacimiento) {
+    if (typeof fechaNacimiento!=='string') {
+        throw new Error("La fecha de nacimiento debe ser una fecha válida");
+      }
     this.#fechaNacimiento = fechaNacimiento;
   }
 
