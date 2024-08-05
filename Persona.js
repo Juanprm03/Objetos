@@ -47,3 +47,9 @@ class Persona {
     return new Date(currentYear - this.#edad, 0, 1);
   }
 }
+
+const persona = new Persona('Juan', 19, '2005-03-05');
+console.log(persona.obtenerNombre());
+persona.establecerEdad(26);
+console.log(persona.obtenerEdad());
+console.log(persona.calcularFechaNacimiento());
