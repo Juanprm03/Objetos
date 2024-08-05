@@ -26,4 +26,7 @@ class Vendedor extends Empleado {
       super(nombre, salarioBase);
       this.comision = comision;
     }
+    calcularSalarioTotal() {
+      return this.salarioBase + this.comision;
+    }
 }
