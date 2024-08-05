@@ -4,6 +4,7 @@ class Empleado {
       this.nombre = nombre;
       this.salarioBase = salarioBase;
     }
+    
   
 
   }
@@ -14,6 +15,9 @@ class Empleado {
     constructor(nombre, salarioBase, bono) {
       super(nombre, salarioBase);
       this.bono = bono;
+    }
+    calcularSalarioTotal() {
+      return this.salarioBase + this.bono;
     }
 }
 
