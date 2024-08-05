@@ -3,4 +3,8 @@ class Estudiante extends Persona{
         super(nombre, apellido, edad);
         this.grado = grado;
     }
+
+    toString(){
+        return `Estudiante: ${super.toString()}, Grado: ${this.grado}`;
+    }
 }
